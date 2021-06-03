@@ -1,0 +1,9 @@
+myTask = document.getElementsByClassName("task-<%= @task.id %>")[0];
+ if (<%= @task.status %>)
+{
+ 	myTask.style.textDecoration = "line-through";
+} else {
+	myTask.style.textDecoration = "";
+}
+
+	      		
